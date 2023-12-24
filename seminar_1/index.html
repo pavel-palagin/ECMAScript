@@ -33,6 +33,7 @@
         function createCounter(counter) {
           return {
             increment: () => {
+              
               counter++;
             },
             decrement: () => {
@@ -61,9 +62,8 @@
       // console.log(targetElement);
 
       function findElementByClass(node, classSearch)
-        {
-
-          let children = node.childNodes; 
+  {          
+      let children = node.childNodes; 
           children.forEach(element => {
             if (element.className === classSearch) {
               console.log(element);
