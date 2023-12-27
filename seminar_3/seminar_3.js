@@ -63,12 +63,16 @@ class Order {
     this.products.push(product);
   }
 
+  //   getTotalPrice() {
+  //     let sum = 0;
+  //     for (let i = 0; i < this.products.length; i++) {
+  //       sum = this.products.reduce((a, b) => a + b.price, 0);
+  //     }
+  //     return sum;
+  //   }
+
   getTotalPrice() {
-    let sum = 0;
-    for (let i = 0; i < this.products.length; i++) {
-      sum = this.products.reduce((a, b) => a + b.price, 0);
-    }
-    return sum;
+    return this.products.reduce((a, b) => a + b.price, 0);
   }
 }
 
